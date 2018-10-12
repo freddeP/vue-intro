@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="https://cdn.jsdelivr.net/npm/vue@2.5.17/dist/vue.js"></script>
+    <title>Chat Vue</title>
+</head>
+<body>
+    
+    <div class="chat" id = "chat">
+        <h1>{{author}}</h1>
+        <p>{{post}}</p>
+        <a :id = "id" :href = "href">delete</a>
+        <h3>cars</h3>
+        <p v-for = "car in cars">
+            <span :id = "car.id">
+            {{car.brand}}
+            </span>
+        </p>
+    </div>
+    <script src="chatVue.js"></script>
+</body>
+</html>
